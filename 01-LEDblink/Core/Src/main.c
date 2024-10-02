@@ -98,7 +98,7 @@ int main(void)
 	while (1)
 	{
 
-		const uint32_t message = 0b1111101111011101101000000;
+		const uint32_t message = 0b11111011110111011010100;
 		for (uint8_t i = 0; i < 32; i++) {
 			if ((message >> (31-i)) & 0b1) {
 				LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
