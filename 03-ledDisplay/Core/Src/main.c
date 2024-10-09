@@ -100,7 +100,7 @@ int main(void)
   HAL_Delay(1000);
   HAL_TIM_Encoder_Start(&htim1, htim1.Channel);
 
-  int i = 0;
+  //int i = 0;
 
   /* USER CODE END 2 */
 
@@ -109,13 +109,10 @@ int main(void)
   while (1)
   {
 //	  sct_value(i * 100 + i * 10 + i);
+//	  i++;
+//	  i = i % 10;
 
 	  sct_value(__HAL_TIM_GET_COUNTER(&htim1));
-
-//	  sct_value(__HAL_TIM_GET_COUNTER(&htim1) + i* 100 + i * 10 + i);
-
-//	  i++;
-//	  i = i % 750;
 	  HAL_Delay(50);
     /* USER CODE END WHILE */
 
